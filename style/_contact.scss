@@ -1,0 +1,47 @@
+.section {
+   
+    .map__container{
+            position: relative;
+            overflow: hidden;
+            width: 70%;
+            height: 250px;
+           
+        }
+    
+  .map{
+    position: absolute;
+    top: 0;
+    left:0;
+    right:0;
+    bottom: 0;
+  }
+    p{
+        @include paragraph;
+    }
+
+}
+form{
+   margin-top: .5rem;
+   width: 100%;
+
+   
+    label {
+        display: block;
+        letter-spacing: 4px;
+      
+        text-align: center;
+       
+      .label-text{
+          font-family: $secondary-font;
+          color: $black;
+          }
+    input{
+        width: 70%;
+        margin: 0.5rem;
+        padding: 0.2rem;
+    }
+      }
+      button{
+         background:transparent;
+      }
+   }

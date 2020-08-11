@@ -1,0 +1,39 @@
+@import 'colors';
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+::-moz-selection { /* Code for Firefox */
+
+  background: $yellow;
+}
+
+::selection {
+  
+  background: $yellow;
+}
+.section {
+  width: 100%;
+
+  overflow: hidden;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: 5rem auto;
+    background-color: $white;
+    box-shadow: 0.3rem 0.6em 1rem rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+
+    text-align: center;
+  }
+}

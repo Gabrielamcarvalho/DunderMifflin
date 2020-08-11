@@ -1,0 +1,114 @@
+@import "_colors.scss";
+@import "_typography.scss";
+
+.hamburger-menu {
+  width: 2rem;
+  height: 2rem;
+  position: fixed;
+  top: 0.75rem;
+  right: 1rem;
+  z-index: 200;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  cursor: pointer;
+
+  visibility: hidden;
+  .line {
+    width: 100%;
+    height: 0.3rem;
+    background-color: $grey;
+    box-shadow: $black;
+    border-radius: 30px;
+  }
+  .line-2 {
+    width: 85%;
+    align-self: flex-end;
+  }
+}
+
+.nav {
+  margin: 0;
+  position: fixed;
+  
+  width: 100%;
+  height: 4rem;
+  background-color: $white;
+  z-index: 100;
+ 
+  &__container {
+   
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+
+    list-style-type: none;
+  }
+  &__item {
+    padding: 0 0.5rem;
+    margin: 1rem 0.2rem;
+ 
+  }
+
+  &__link {
+  
+    font-family: $primary-font;
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+    color: $black;
+    transition: color .5s;
+
+    &:hover{
+      color: $yellow;
+    }
+  }
+  .active {
+    border-bottom: 1.5px solid $grey;
+
+    &:hover{
+      color: $black;
+    }
+  }
+}
+@media screen and (max-width: 565px) {
+  .hamburger-menu {
+    visibility: visible;
+  }
+  .nav {
+    visibility: hidden;
+
+    &__item{
+      margin-left: 1rem;
+    }
+  }
+  
+  .change {
+    .line-1 {
+      transform: rotate(45deg);
+      transform: rotate(45deg) translate(0.2rem, 0.6rem);
+    }
+    .line-2 {
+      opacity: 0;
+    }
+    .line-3 {
+      transform: rotate(-45deg) translate(0.2rem, -0.6rem);
+    }
+    .nav {
+      visibility: visible;
+    
+      background-color: $white;
+      z-index: 100;
+    
+  
+      &__container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: $white;
+        z-index: 200;
+      }
+    }
+  }
+  
+}
