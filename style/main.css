@@ -29,6 +29,7 @@ h3 {
 
 a {
   text-decoration: none;
+  color: #001427;
 }
 
 button {
@@ -62,6 +63,7 @@ h3 {
 
 a {
   text-decoration: none;
+  color: #001427;
 }
 
 .section .img-container {
@@ -92,6 +94,10 @@ a {
   color: #7C7C7C;
   letter-spacing: 0.05rem;
   margin: 0.5rem;
+}
+
+.section button {
+  width: 80%;
 }
 
 .section a {
@@ -174,7 +180,7 @@ a {
 }
 
 .cards-wrapper .card {
-  width: 80%;
+  max-width: 250px;
   height: 25rem;
   margin-top: 1rem;
   -webkit-box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.4);
@@ -233,6 +239,7 @@ a {
   color: #F5F5F5;
   text-shadow: 0.1rem 0.1rem 0.1rem #7C7C7C;
   font-weight: 500;
+  font-size: .75rem;
   margin-bottom: 1rem;
 }
 
@@ -258,7 +265,7 @@ a {
 }
 
 .cards-wrapper button {
-  width: 10rem;
+  width: 80%;
 }
 
 .add-team .team {
@@ -285,13 +292,17 @@ a {
   color: #F5F100;
 }
 
-@media screen and (min-width: 725px) {
+@media screen and (min-width: 600px) {
   .cards-wrapper {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: auto auto;
         grid-template-columns: auto auto;
     width: 90%;
+  }
+  .cards-wrapper .card {
+    width: 90%;
+    max-width: 300px;
   }
   .cards-wrapper .card-info h2 {
     font-family: "Special Elite", cursive;
@@ -307,6 +318,10 @@ a {
   .cards-wrapper {
     -ms-grid-columns: auto auto auto;
         grid-template-columns: auto auto auto;
+    width: 90%;
+  }
+  .cards-wrapper .card {
+    width: 80%;
   }
 }
 
@@ -332,29 +347,62 @@ a {
   letter-spacing: 0.05rem;
 }
 
-form {
-  margin-top: .5rem;
-  width: 100%;
+.form {
+  padding: 30px 40px;
 }
 
-form label {
-  display: block;
-  letter-spacing: 4px;
-  text-align: center;
-}
-
-form label .label-text {
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
   font-family: "Mulish", sans-serif;
+  font-size: 1.2rem;
+  color: #F5F5F5;
+  text-shadow: 0.1rem 0.1rem 0.1rem #7C7C7C;
+  font-weight: 500;
   color: #001427;
+  display: block;
 }
 
-form label input {
-  width: 70%;
-  margin: 0.5rem;
-  padding: 0.2rem;
+.form input,
+.form textarea {
+  border: 1px solid #cabfbf;
+  border-radius: 4px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 0.5rem;
+  font-size: 14px;
 }
 
-form button {
+.form-control input:focus {
+  outline: 0;
+  border-color: #777;
+}
+
+.form .success input {
+  border-color: blue;
+}
+
+.form .error input {
+  border-color: red;
+}
+
+.form small {
+  text-shadow: none;
+  font-size: .7rem;
+  color: red;
+  position: absolute;
+  bottom: 1;
+  left: 0;
+  visibility: hidden;
+}
+
+.form .error small {
+  visibility: visible;
+}
+
+button {
   background: transparent;
 }
 
@@ -437,6 +485,7 @@ h3 {
 
 a {
   text-decoration: none;
+  color: #001427;
 }
 
 .hamburger-menu {
@@ -632,8 +681,8 @@ a {
 }
 
 .banner {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(245, 246, 252, 0.514)), to(rgba(0, 0, 0, 0.151))), url("/images/back.jpeg");
-  background: linear-gradient(to bottom, rgba(245, 246, 252, 0.514), rgba(0, 0, 0, 0.151)), url("/images/back.jpeg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(245, 246, 252, 0.514)), to(rgba(0, 0, 0, 0.151))), url("./images/back.jpeg");
+  background: linear-gradient(to bottom, rgba(245, 246, 252, 0.514), rgba(0, 0, 0, 0.151)), url("./images/back.jpeg");
   background-size: cover;
   width: 100%;
   height: 100vh;

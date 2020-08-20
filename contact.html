@@ -32,9 +32,9 @@
               <li class="nav__item">
                 <a class="nav__link " href="./about.html">About</a>
               </li>
-              <li class="nav__item">
+              <!-- <li class="nav__item">
                 <a class="nav__link" href="./store.html">Store</a>
-              </li>
+              </li> -->
               <li class="nav__item">
                 <a class="nav__link active" href="#">Contact</a>
               </li>
@@ -51,21 +51,26 @@
                   </div>
                    <p>Location: Scranton Business Park
                     13927 Saticoy St, Panorama City, CA 91402, United States</p>
-                    <form>
-                        <label>
-                            <div class="label-text">Full Name</div>
-                            <input name="name" id="name" type="text" required placeholder="Enter your name" />
-                        </label>
-                        <label>
-                            <div class="label-text">Email</div>
-                            <input type="email" name="email" id="email" required placeholder="Enter your email" />
-                        </label>
-                        <label>
-                            <div class="label-text">Phone Number</div>
-                            <input type="tel" name="phone" id="phone" required placeholder="Enter your phone number" />
-                        </label>
-                        <button type="submit" value="Submit">Submit</button>
-                    </form>
+                    <form action="" id="form" class="form">
+                     
+                      <div class="form-control">
+                          <label for="username">Username</label>
+                          <input type="text" id="username" name="name" placeholder="Enter username" required>
+                          <small>Error message</small>
+                      </div>
+                      <div class="form-control">
+                          <label for="email">Email</label>
+                          <input type="text" id="email" placeholder="Enter email" name="email" required>
+                          <small>Error message</small>
+                      </div>
+                      <div class="form-control">
+                          <label for="text">Text</label>
+                          <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+                          
+                      </div>
+                      
+                      <button type="submit">Submit</button>
+                  </form>
     
               </div>
           </section>
@@ -80,5 +85,7 @@
           </footer>
           </div>
           <script src="./js/script.js"></script>
+          <script src="./js/contact.js"></script>
+
 </body>
 </html>

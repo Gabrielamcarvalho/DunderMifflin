@@ -1,47 +1,69 @@
 .section {
-   
-    .map__container{
-            position: relative;
-            overflow: hidden;
-            width: 70%;
-            height: 250px;
-           
-        }
-    
-  .map{
+  .map__container {
+    position: relative;
+    overflow: hidden;
+    width: 70%;
+    height: 250px;
+  }
+
+  .map {
     position: absolute;
     top: 0;
-    left:0;
-    right:0;
+    left: 0;
+    right: 0;
     bottom: 0;
   }
-    p{
-        @include paragraph;
-    }
-
+  p {
+    @include paragraph;
+  }
 }
-form{
-   margin-top: .5rem;
-   width: 100%;
+.form {
+  padding: 30px 40px;
 
-   
-    label {
-        display: block;
-        letter-spacing: 4px;
-      
-        text-align: center;
-       
-      .label-text{
-          font-family: $secondary-font;
-          color: $black;
-          }
-    input{
-        width: 70%;
-        margin: 0.5rem;
-        padding: 0.2rem;
+  &-control {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+    @include subtitle;
+    color: $black;
+    display: block;
+  }
+
+  input,
+  textarea {
+    border: 1px solid rgb(202, 191, 191);
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 0.5rem;
+    font-size: 14px;
+  }
+  &-control input:focus {
+    outline: 0;
+    border-color: #777;
+  }
+    .success input {
+      border-color: blue;
     }
-      }
-      button{
-         background:transparent;
-      }
-   }
+    .error input {
+      border-color: red;
+    }
+    small {
+      text-shadow: none;
+      font-size: .7rem;
+      color: red;
+      position: absolute;
+      bottom: 1;
+      left: 0;
+      visibility: hidden;
+    }
+    .error small {
+      visibility: visible;
+    }
+  }
+
+
+button {
+  background: transparent;
+}
