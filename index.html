@@ -1,122 +1,473 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dunder Mifflin</title>
-    <link
-      rel="stylesheet"
-      href="./font-awesome-4.7.0/css/font-awesome.min.css"
-    />
-    <link rel="stylesheet" href="style/main.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,700;0,900;1,200&family=Special+Elite&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <!-- header beggining -->
-    <div class="container">
-      <!-- hamburger menu -->
-      <div class="hamburger-menu">
-        <div class="line line-1"></div>
-        <div class="line line-2"></div>
-        <div class="line line-3"></div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dunder Mifflin</title>
+
+  <!-- font awesome -->
+  <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css" />
+  <!-- patterns -->
+  <link href="https://unpkg.com/pattern.css" rel="stylesheet" >
+
+  <!-- google fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,700;0,900;1,200&family=Special+Elite&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- css style -->
+  <link rel="stylesheet" href="style/main.css" />
+
+</head>
+
+<body>
+
+
+  <header class="header" id="header">
+    <!-- navbar -->
+
+    <nav class="navbar">
+        <span class="navbar-toggle" id="hamburger">
+            <i class="fa fa-bars"></i>
+        </span>
+        <a href="#" class="logo">Dunder Mifflin</a>
+        <ul class="main-nav" id="js-menu">
+            <li>
+                <a href="#hero" class="nav-links home">Home</a>
+            </li>
+            <li>
+                <a href="#deals" class="nav-links deals">Deals</a>
+            </li>
+            <li>
+                <a href="#about" class="nav-links">About Us</a>
+            </li>
+            <li>
+                <a href="#reviews" class="nav-links">
+                Reviews
+                </a>
+            </li>
+            <li>
+                <a href="#contact" class="nav-links">Contact</a>
+            </li>
+        </ul>
+    </nav>
+ <!-- end of navbar -->
+    </header>
+<!-- end of header -->
+
+    <!-- hero section -->
+    <section class="hero " id="hero">
+      <div class="banner">
+
+        <h1> Dunder Mifflin</h1>
+        <h2>Paper Company</h2>
+        <a href="#deals" class="btn">View More</a>
       </div>
 
-      <div="header" id="header">
-        <!-- navbar -->
-     
-        <nav class="nav">
-          <ul class="nav__container">
-            <li class="nav__item">
-              <a class="nav__link active" href="#">Home</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="./about.html">About</a>
-            </li>
-            <!-- <li class="nav__item">
-              <a class="nav__link" href="./store.html">Store</a>
-            </li> -->
-            <li class="nav__item">
-              <a class="nav__link" href="./contact.html">Contact</a>
-            </li>
-          </ul>
-        </nav>
-        <section class="middle">
-        <div class="banner">
-          <div class="banner__title">
-          <h1> Dunder Mifflin</h1>
-          <p>Paper Company</p>
-           <a href="#deals">More</a>
-        </div>
-        </div>
-        <!-- end of navbar -->
+    </section>
+    <!-- end of hero section -->
 
-        <!-- special deals session -->
-        <aside class="deals" id="deals">
-          <h3 class="deals__title">Special deals</h3>
-          <div class="deals__container">
-            <div class="deals__item">
-              <h4>A4 100 units</h4>
-              <img src="./images/item1.jpg" alt="White paper">
-              <p>
-                100 units of A4 paper, Dunder Mifflin quality!
-                
-                <div class="deals__price">Just $13.49!</div>
-              </p>
-              <button class="button">more</button>
-            </div>
-            <div class="deals__item">
-              <h4>A4 1000 units</h4>
-              <img src="./images/item2.jpg" alt="White paper box" />
-              <p>
-                1000 units of A4 paper, Dunder Mifflin quality!
-                <div class="deals__price">Just $49,99!</div>
-              </p>
+    <div class="container">
+      <!-- special deals session -->
+      <section class="deals" id="deals">
+        <h3 class="deals__title">Special deals</h3>
+        <div class="deals__container">
+          <div class="deals__item">
+            <img src="./images/item5.jpg" class="deals__item--image1" alt="White paper">
+            <h4>A4 100 units</h4>
+            <p>
+               1000 units of A4 paper, Dunder Mifflin quality!
 
-          
-              <button class="button">more</button>
+            <div class="deals__price">Just €13.49!</div>
+            </p>
+            <button class="btn">more</button>
+          </div>
+          <div class="deals__item">
+            <img src="./images/item4.jpg" alt="White paper box" class="deals__item--image1" />
+            <h4>A4 1000 units</h4>
+            <p>
+              1000 units of A4 paper, Dunder Mifflin quality!
+            <div class="deals__price">Just €49,99!</div>
+            </p>
+            <button class="btn">more</button>
+          </div>
+          <div class="deals__item">
+            <img src="./images/item6.jpg" alt="White paper box" class="deals__item--image3" />
+            <h4>A4 10000 units</h4>
+            <p>
+              10000 units of A4 paper, Dunder Mifflin quality!
+            <div class="deals__price">Just €99,99!</div>
+            </p>
+            <button class="btn">more</button>
+          </div>
+        </div>
+      </section>
+      <!-- end of deals session -->
+
+      <!-- start of about section -->
+      <section class="about" id="about">
+        <h3 class="about__title">about</h3>
+        <div class="about__container">
+          <div class="img-container pattern-dots-md gray-light">
+            <img src="./images/banner.jpeg" alt="Dunder Mifflin team" />
+          </div>
+
+          <div class="about__description">
+            <p class="about__description--text"> Dunder Mifflin Incorporated provides its customers quality office and
+              information technology products, furniture, printing great values and the expertise required for making
+              informed buying decisions. We provide our products and services with a dedication to the highest degree of
+              integrity and quality of customer satisfaction, developing long-term professional relationships with
+              employees that develop a big pride, creating a
+              stable working environment and company spirit.</p>
+          </div>
+        </div>
+      </section>
+      <!-- end of about section -->
+
+      <!-- start of meet the team section -->
+      <section class="meet-team" id="team">
+        <button type="text" class="special-btn">
+          <span>MEET THE TEAM</span> </button>
+      </section>
+      <!-- end of meet the team section -->
+
+      <!-- modal  -->
+      <div id="modal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+
+          <h3>The Team</h3>
+          <div class="cards-wrapper">
+            <div class="card" data-tilt>
+              <div class="card-img-wrapper">
+                <img src="./images/MichaelScott.PNG" alt="Michael Scott">
+              </div>
+              <div class="card-info">
+                <h2>Michael Scott</h2>
+                <h5>Regional Manager</h5>
+                <p>Likes: the movie Mean Girls <br>
+                  Dislikes: Toby Flenderson</p>
+                <button class="btn"> <a href="https://theoffice.fandom.com/wiki/Michael_Scott" target="_blank"> Read
+                    more</a></button>
+              </div>
             </div>
-         </div>
-        </aside>
-        </section>
-      </header>
-        <!-- end of deals session -->
-        <!-- reviews -->
-        <section class="reviews">
-          <h3>reviews</h3>
-          <div class="reviews__container">
-           <article class="review">
-             <div class="reviews__img-container">
-               <img src="./images/Angela_Martin.jpg" id="img" alt="">
-             </div>
-             <h4 id="author">Sara Jones</h4>
-             <p id="job">UX design</p>
-             <p id="info">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque temporibus, exercitationem magnam hic repellat sit fugiat libero veniam distinctio fuga!</p>
-             <div class="button-container">
+            <div class="card" data-tilt>
+              <div class="card-img-wrapper">
+                <img src="./images/JimHalpert.PNG" alt="Jim Halpert">
+              </div>
+              <div class="card-info">
+                <h2>Jim Halpert</h2>
+                <h5>Assistant Regional Manager</h5>
+                <p>Likes: play pranks on Dwight <br>
+                  Dislikes:Ryan Howard </p>
+                <button class="btn"><a href="https://theoffice.fandom.com/wiki/Jim_Halpert" target="_blank"> Read
+                    more</a></button>
+              </div>
+            </div>
+            <div class="card" data-tilt>
+              <div class="card-img-wrapper">
+                <img src="./images/Dwight_.jpg" alt="Dwight K. Schrute">
+              </div>
+              <div class="card-info">
+                <h2>Dwight K. Schrute</h2>
+                <h5>Sales representative</h5>
+                <p>Likes: watch "Battlestar Galactica" on television <br>
+                  Dislikes: Jim prank's</p>
+                <button class="btn"><a href="https://theoffice.fandom.com/wiki/Dwight_Schrute"> Read more</a></button>
+              </div>
+            </div>
+            <div class="card" data-tilt>
+              <div class="card-img-wrapper">
+                <img src="./images/Phyllis_Vance.jpg" alt="Phylis Vence">
+              </div>
+              <div class="card-info">
+                <h2>Phylis Vence</h2>
+                <h5>Sales representative</h5>
+                <p>Likes: Girl talk <br>
+                  Dislikes: not being part of the party committee</p>
+                <button class="btn"><a href="https://theoffice.fandom.com/wiki/Phyllis_Vance" target="_blank"> Read
+                    more</a></button>
+              </div>
+            </div>
+            <div class="card" data-tilt>
+              <div class="card-img-wrapper">
+                <img src="./images/Stanley_Hudson.jpg" alt="Stanley Hudson">
+              </div>
+              <div class="card-info">
+                <h2>Stanley Hudson</h2>
+                <h5>Sales representative</h5>
+                <p>Likes: Being ironic<br>
+                  Dislikes: Everybody</p>
+                <button class="btn"><a href="https://theoffice.fandom.com/wiki/Stanley_Hudson" target="_blank"> Read
+                    more</a></button>
+              </div>
+            </div>
+            <div class="card" data-tilt>
+              <div class="card-img-wrapper">
+                <img src="./images/Pam_Beesley.jpg" alt="Pam Beesley">
+              </div>
+              <div class="card-info">
+                <h2>Pam Beesley</h2>
+                <h5>Sales representative</h5>
+                <p>Likes: painting <br>
+                  Dislikes: injustice</p>
+                <button class="btn"><a href="https://theoffice.fandom.com/wiki/Pam_Beesly" target="_blank"> Read
+                    more</a></button>
+              </div>
+            </div>
+            <div class="card" data-tilt>
+              <div class="card-img-wrapper">
+                <img src="./images/Andy_Bernard.jpg" alt="Andy Bernard">
+              </div>
+              <div class="card-info">
+                <h2>Andy Bernard</h2>
+                <h5>Sales representative</h5>
+                <p>Likes: singing and Cornell<br>
+                  Dislikes: Getting angry</p>
+                <button class="btn"><a href="https://theoffice.fandom.com/wiki/Andy_Bernard" target="_blank"> Read
+                    more</a></button>
+              </div>
+            </div>
+            <div class="card" data-tilt>
+              <div class="card-img-wrapper">
+                <img src="./images/RyanHoward.PNG.png" alt="Ryan Howard">
+              </div>
+              <div class="card-info">
+                <h2>Ryan Howard</h2>
+                <h5>Temp</h5>
+                <p>Likes: Kelly Kapoor <br>
+                  Dislikes: Kelly Kapoor</p>
+                <button class="btn"><a href="https://theoffice.fandom.com/wiki/Ryan_Howard" target="_blank"> Read
+                    more</a></button>
+              </div>
+            </div>
+            <div class="card" data-tilt>
+              <div class="card-img-wrapper">
+                <img src="./images/Angela_Martin.jpg" alt="Angela Martin">
+              </div>
+              <div class="card-info">
+                <h2>Angela Martin</h2>
+                <h5>Senior Accountant</h5>
+                <p>Likes: Cats <br>
+                  Dislikes: Immorality</p>
+                <button class="btn"><a href="https://theoffice.fandom.com/wiki/Angela_Martin" target="_blank"> Read
+                    more</a></button>
+              </div>
+            </div>
+            <div class="card" data-tilt>
+              <div class="card-img-wrapper">
+                <img src="./images/Oscar_Martinez.jpg" alt="Oscar Martinez">
+              </div>
+              <div class="card-info">
+                <h2>Oscar Martinez</h2>
+                <h5>Chief Accountant</h5>
+                <p>Likes: Elton John <br>
+                  Dislikes: Michael's bad jokes</p>
+                <button class="btn"><a href="https://theoffice.fandom.com/wiki/Oscar_Martinez" target="_blank"> Read
+                    more</a></button>
+              </div>
+            </div>
+            <div class="card" data-tilt>
+              <div class="card-img-wrapper">
+                <img src="./images/Kevin_Malone.png" alt="Kevin Malone">
+              </div>
+              <div class="card-info">
+                <h2>Kevin Malone</h2>
+                <h5>Accountant</h5>
+                <p>Likes: Chilli and music <br>
+                  Dislikes: Angela Martin </p>
+                <button class="btn"><a href="https://theoffice.fandom.com/wiki/Kevin_Malone" target="_blank"> Read
+                    more</a></button>
+              </div>
+            </div>
+            <div class="card" data-tilt>
+              <div class="card-img-wrapper">
+                <img src="./images/Meredith_Palmer.jpg" alt="Meredith Palmer">
+              </div>
+              <div class="card-info">
+                <h2>Meredith Palmer</h2>
+                <h5>Purchasing/Supplier</h5>
+                <p>Likes: Drinking and dating <br>
+                  Dislikes: Being a mother</p>
+                <button class="btn"><a href="https://theoffice.fandom.com/wiki/Meredith_Palmer" target="_blank"> Read
+                    more</a></button>
+              </div>
+            </div>
+            <div class="card" data-tilt>
+              <div class="card-img-wrapper">
+                <img src="./images/Creed_Bratton.jpg" alt="Creed Bratton">
+              </div>
+              <div class="card-info">
+                <h2>Creed Bratton</h2>
+                <h5>Quality Assurance</h5>
+                <p>Likes: Drugs <br>
+                  Dislikes: Working</p>
+                <button class="btn"><a href="https://theoffice.fandom.com/wiki/Creed_Bratton" target="_blank"> Read
+                    more</a></button>
+              </div>
+            </div>
+            <div class="card" data-tilt>
+              <div class="card-img-wrapper">
+                <img src="./images/Kelly_Kapoor.jpg" alt="Kelly Kapoor">
+              </div>
+              <div class="card-info">
+                <h2>Kelly Kapoor</h2>
+                <h5>Customer Service</h5>
+                <p>Likes: Ryan Howard and gossip<br>
+                  Dislikes: Her sisters</p>
+                <button class="btn"><a href="https://theoffice.fandom.com/wiki/Kelly_Kapoor" target="_blank"> Read
+                    more</a></button>
+              </div>
+            </div>
+            <div class="card" data-tilt>
+              <div class="card-img-wrapper">
+                <img src="./images/ErinHannon.jpg" alt="Erin Hannon">
+              </div>
+              <div class="card-info">
+                <h2>Erin Hannon</h2>
+                <h5>Receptionist</h5>
+                <p>Likes: Being a receptionist <br>
+                  Dislikes: Nothing</p>
+                <button class="btn"><a href="https://theoffice.fandom.com/wiki/Erin_Hannon" target="_blank"> Read
+                    more</a></button>
+              </div>
+            </div>
+            <div class="card" data-tilt>
+              <div class="card-img-wrapper">
+                <img src="./images/Toby_Flenderson.png" alt="Toby Flenderson">
+              </div>
+              <div class="card-info">
+                <h2>Toby Flenderson</h2>
+                <h5>HR</h5>
+                <p>Likes: Travelling <br>
+                  Dislikes: Being bullied by Michael</p>
+                <button class="btn"><a href="https://theoffice.fandom.com/wiki/Toby_Flenderson" target="_blank"> Read
+                    more</a></button>
+              </div>
+            </div>
+            <div class="card" data-tilt>
+              <div class="card-img-wrapper">
+                <img src="./images/Gabe_Lewis.jpg" alt="Gabe Lewis">
+              </div>
+              <div class="card-info">
+                <h2>Gabe Lewis</h2>
+                <h5>Marketing</h5>
+                <p>Likes: Erin Hannon <br>
+                  Dislikes: Andy Bernard</p>
+                <button class="btn"><a href="https://theoffice.fandom.com/wiki/Gabe_Lewis" target="_blank"> Read
+                    more</a></button>
+              </div>
+            </div>
+            <div class="card" data-tilt>
+              <div class="card-img-wrapper">
+                <img src="./images/Darryl_Philbin.PNG" alt="Darryl Philbin">
+              </div>
+              <div class="card-info">
+                <h2>Darryl Philbin</h2>
+                <h5>Warehouse Manager</h5>
+                <p>Likes: His daughter and sports <br>
+                  Dislikes: Michael's disregard for rules or safety</p>
+                <button class="btn"><a href="https://theoffice.fandom.com/wiki/Darryl_Philbin" target="_blank"> Read
+                    more</a></button>
+              </div>
+            </div>
+
+          </div>
+          </section>
+        </div>
+
+      </div>
+      <!-- end of modal -->
+      <!-- reviews -->
+
+      <section class="reviews" id="reviews">
+        <h3>reviews</h3>
+        <div class="reviews__container">
+          <article class="review">
+            <div class="reviews__img-container">
+              <img src="./images/Angela_Martin.jpg" id="img" alt="">
+            </div>
+            <h4 id="author">Sara Jones</h4>
+            <p id="job">UX design</p>
+            <p id="info">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque temporibus, exercitationem
+              magnam hic repellat sit fugiat libero veniam distinctio fuga!</p>
+            <div class="button-container">
               <button class="prev-btn">
                 <i class="fa fa-chevron-left"></i>
               </button>
               <button class="next-btn">
                 <i class="fa fa-chevron-right"></i>
               </button>
-             </div>
-           </article>
-          </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <!-- end of reviews section -->
 
-          </section>
+      <!-- start of contact section -->
+      <section class="contact" id="contact">
+        <h3>Contact</h3>
+        <div class="contact-box">
+          <div class="left">
+            <h5 class="address">1725 Slough Avenue</h5>
+              <div class="social-media">
+                <i class="fa fa-facebook icon-contact"></i>
+                <i class="fa fa-google-plus icon-contact"></i>
+                <i class="fa fa-instagram icon-contact"></i>
+              </div>
+          </div>
+          <div class="right">
+            <label for="Name">
+            <input type="text" class="field" placeholder="Your Name">
+            </label>
             
-      <!-- end of section two -->
-      <footer class="footer">
-        <h4 class="footer__title">&copy; Dunder Mifflin 2020</h4>
+            <label for="email">
+            <input type="email" class="field" placeholder="Your Email">
+            </label>
+            <label for="phone">
+            <input type="text" class="field" placeholder="Your Phone">
+            </label>
+            <label for="textarea">
+            <textarea class="field area" placeholder="Message"></textarea>
+            </label>
+            <button class="btn">Submit</button>
+          </div>
+        </div>
+      </section>
+      <!-- end of contact section -->
+
+    </div>
+
+   <!-- start of footer -->
+    <footer class="footer">
+        <h6 class="footer__title">&copy; Dunder Mifflin 2020 | Made with  	&#9829; by Gabriela M. Carvalho</h6>
 
         <div class="social-media">
-          <i class="fa fa-facebook"></i>
-          <i class="fa fa-google-plus"></i>
-          <i class="fa fa-instagram"></i>
+          <h4>Check my Social Media</h4>
+          <div class="social-media-items">
+
+            <a href="https://github.com/Gabrielamcarvalho" target="_blank"><i class="fa fa-github-alt icon-footer"></i></a>
+            <a href="https://codepen.io/gabicarvalho" target="_blank"><i class="fa fa-codepen icon-footer"></i></a>
+            <a href="https://www.linkedin.com/in/gabriela-carvalho-916313174/" target="_blank"><i class="fa fa-linkedin icon-footer"></i></a>
+            
+           
+          </div>
         </div>
       </footer>
-    </div>
-      <script src="js/script.js"></script>
-      <script src="js/reviews.js"></script>
-      <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-  </body>
+<!-- end of footer -->
+    <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="./js/tilt.js"></script>
+    <script src="js/reviews.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+</body>
+
 </html>
